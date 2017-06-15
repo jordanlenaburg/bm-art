@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    background: url(global-images/back.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    color: white;
+}
+
+select {
+    border-radius: 0px;
+    border: 0px;
+}
+
+input {
+    border: 0px;
+}
+
+.img-full-width {
+    width: 100%
+}
+
+.map {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.content {
+    min-height: calc(100vh - 40px);
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.img-proj {
+    position: relative;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.img-proj:hover {
+    width: 70%;
+    z-index: 1;
+}
+
+.foot {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 0px;
+    height: 25px;
+    color: white;
+}
+
+.card-1 {
+    width: 470px;
+    height: 255px;
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+@media (max-width: 990px) {
+    .card-1 {
+        width: 100%;
+    }
+}
+
+.card-overlay {
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-description {
+    width: 100%;
+    resize: none;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.card-text {
+    background-color: rgba(0, 0, 0, .4);
+    color: ghostwhite;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

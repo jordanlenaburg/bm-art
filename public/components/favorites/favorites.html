@@ -1,0 +1,11 @@
+<br><br>
+<section class="container">
+    <form>
+        <search-form art="art" categories="categories"></search-form>
+    </form>
+    <div class="wrapper text-center">
+        <div class="card-1" ng-repeat="piece in favorites | filter:art">
+            <fav-art-piece piece="piece"></fav-art-piece>
+        </div>
+    </div>
+</section>

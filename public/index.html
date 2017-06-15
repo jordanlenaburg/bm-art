@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Burner Art</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<navbar></navbar>
+<section class="content">
+    <ng-view></ng-view>
+    <br><br><br>
+    <footer></footer>
+</section>
+
+<!--Libraries-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<!--App-->
+<script src="app.js"></script>
+<!--Services-->
+<script src="services/favService.js"></script>
+<script src="services/imgService.js"></script>
+<script src="services/bmService.js"></script>
+<!--Directives-->
+<script src="directives/footer/footer.js"></script>
+<script src="directives/navbar/navbar.js"></script>
+<script src="directives/search-form/searchForm.js"></script>
+<script src="directives/art-piece/artPiece.js"></script>
+<script src="directives/bm-art-piece/bmArtPiece.js"></script>
+<script src="directives/favorite-art-piece/favoriteArtPiece.js"></script>
+<script src="directives/single-search-result/singleSearchResult.js"></script>
+<!--Components-->
+<script src="components/query-results/queries.js"></script>
+<script src="components/query-results/single-instance/singleArtPiece.js"></script>
+<script src="components/favorites/favorites.js"></script>
+<script src="components/favorites/single-instance/singleFavorite.js"></script>
+<script src="components/home/home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<br><br>
+<section class="container">
+    <form>
+        <search-form art="art" categories="categories"></search-form>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <button class="btn btn-info" ng-click="getBmApi(art)">Search</button>
+            </div>
+        </div>
+    </form>
+    <div class="wrapper text-center">
+        <div class="card-1" ng-repeat="piece in bmArtPieces | filter:art">
+            <bm-art-piece piece="piece"></bm-art-piece>
+        </div>
+    </div>
+</section>

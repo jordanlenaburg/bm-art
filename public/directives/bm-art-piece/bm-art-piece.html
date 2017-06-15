@@ -1,0 +1,9 @@
+<div style="background: url('{{ piece.images[0].thumbnail_url }}')">
+    <div class="card-overlay">
+        <div class="card-text">
+            <h3 class="text-center"><a href="#!/query/{{ piece.uid }}">{{ piece.name }}</a></h3>
+            <button class="btn btn-success" ng-click="addFav(piece)">Add to Favorites</button>
+            <art-piece piece="piece"></art-piece>
+        </div>
+    </div>
+</div>
