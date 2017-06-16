@@ -19,6 +19,20 @@ input {
     border: 0px;
 }
 
+.arm {
+    width: 300px;
+    height: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 41.5%;
+    left: 49.95%;
+    transform-origin: 0% 50%;
+}
+.dot {
+    height: 100%
+}
+
 .img-full-width {
     width: 100%
 }
@@ -26,7 +40,17 @@ input {
 .map {
     width: 100%;
     background-color: rgba(0, 0, 0, .6);
+    position: relative;
 }
+
+.map-dot {
+    position: absolute;
+    width: 1%;
+    top: 41%;
+    left: 49.5%;
+}
+
+
 
 .content {
     min-height: calc(100vh - 40px);

@@ -1,12 +1,23 @@
 <!--still needs to be done-->
 <!--add map image results-->
 
-<section class="container">
-    <div class="row">
-        <div class="col-xs-12 map">
-            <img src="global-images/brc.png" alt="" class="img-responsive">
-            <!--img size is 1350x1350-->
-            <!--936px = 11220 ft-->
-        </div>
+<section class="container map text-center">
+    <div class="arm" ng-repeat="art in artList" style="transform: rotate({{ angle }}deg); width: {{ distance }}%">
+        <img src="global-images/button-purple.svg" class="dot" alt="">
     </div>
+    <img src="global-images/brc.png" alt="" class="img-full-width">
+
+    <img src="global-images/button-blue.svg" alt="" class="map-dot">
+    <!--<img src="global-images/button-red.svg" alt="" class="map-dot"-->
+         <!--style="position: absolute; top: {{ posY }}%; left: {{ posX }}%">-->
+
+
+
+    <!--img size is 1350x1350-->
+    <!--936px = 11220 ft-->
+    <!--Image center point is top (y) 41%(of 1350) left (x) 49%(of 1350)-->
+    <!--each minute is .5 degrees-->
+    <!--hours is 30 degrees, min is .5, because we are using the x axis on a clock, we need to add 90 deg-->
+    <!--dot formula: angle = (h*30 + m*.5 + 90)  hypotenuse-in-px = distance*(11220/936)  x-axis = hyp*(cos angle)  y-axis(sq) = hyp(sq)-x(sq)-->
+
 </section>
