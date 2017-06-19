@@ -8,9 +8,9 @@
         <h4>{{ singlePiece.location_string }}</h4>
     </div>
 </div>
-<div class="row">
-    <div class="text-center" ng-repeat="imageUrl in singlePiece.imageUrls">
-        <img src="{{ imageUrl }}" alt="" class="img-proj">
+<div class="row images">
+    <div class="text-center" >
+        <span ng-repeat="imageUrl in singlePiece.imageUrls"><img ng-src="{{ imageUrl }}" alt="" class="img-proj"></span>
     </div>
 </div>
 <div class="row">

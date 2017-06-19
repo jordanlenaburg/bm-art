@@ -1,8 +1,10 @@
 <div style="background: url('{{ piece.imageUrls[0] }}')">
-    <div class="card-overlay">
-        <div class="card-text">
-            <h3 class="text-center"><a href="#!/favorites/{{ piece._id }}">{{ piece.name }}</a></h3>
-            <art-piece piece="piece"></art-piece>
+    <a href="#!/favorites/{{ piece._id }}">
+        <div class="card-overlay">
+            <div class="card-text">
+                <h3 class="text-center">{{ piece.name }}</h3>
+                <art-piece piece="piece"></art-piece>
+            </div>
         </div>
-    </div>
+    </a>
 </div>

@@ -6,6 +6,12 @@ body {
     background-size: cover;
 }
 
+h1,
+h3 {
+    padding-top: 10px;
+    font-family: fantasy;
+}
+
 a {
     color: white;
 }
@@ -19,9 +25,23 @@ input {
     border: 0px;
 }
 
+.map-thumbnail {
+    display: none;
+}
+
+.thumbnail {
+    width: 100px;
+}
+
+.map-link:hover + .map-thumbnail {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
 .arm {
     width: 300px;
-    height: 10px;
+    height: 1%;
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -29,12 +49,17 @@ input {
     left: 49.95%;
     transform-origin: 0% 50%;
 }
+
 .dot {
     height: 100%
 }
 
 .img-full-width {
     width: 100%
+}
+
+.top-div {
+    padding-bottom: 25%;
 }
 
 .map {
@@ -50,9 +75,10 @@ input {
     left: 49.5%;
 }
 
-
-
 .content {
+    position: absolute;
+    width: 100%;
+    margin: auto;
     min-height: calc(100vh - 40px);
     background-color: rgba(255, 255, 255, .2);
 }
@@ -62,6 +88,7 @@ input {
     width: 100px;
     transition-property: all;
     transition-duration: 1s;
+    padding: 10px;
 }
 
 .img-proj:hover {
@@ -81,7 +108,7 @@ input {
 
 .card-1 {
     width: 470px;
-    height: 255px;
+    height: 260px;
     position: relative;
     display: inline-block;
     padding: 15px;
@@ -94,7 +121,7 @@ input {
 }
 
 .card-overlay {
-    height: 255px;
+    height: 260px;
     overflow: hidden;
     position: relative;
 }
@@ -121,3 +148,7 @@ input {
     padding-right: 15px;
     padding-left: 15px;
 }
+/*.images {*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*}*/

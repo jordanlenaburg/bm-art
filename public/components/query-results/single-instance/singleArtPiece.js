@@ -16,7 +16,10 @@ angular.module("mainApp")
             function (response) {
                 var n = response.search("http://galleries.burningman.org/filestore");
                 $scope.singlePiece.imageUrls = [response.slice(n, n + 96)];
-                // console.log(imgUrl);
+                if ($scope.singlePiece.imageUrls == ".") {
+                    $scope.singlePiece.imageUrls = [$scope.singlePiece.images[0].thumbnail_url]
+                }
+                // console.log($scope.singlePiece.imageUrls);
                 // console.log($scope.singlePiece);
                 return response
             }
@@ -29,7 +32,7 @@ angular.module("mainApp")
                     }
                 ),
                 function (response) {
-                    alert ("There was an error:\n" + response.data.errmsg);
+                    alert("There was an error:\n" + response.data.errmsg);
                     console.log(response.status);
                     console.log(response)
                 }

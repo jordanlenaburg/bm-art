@@ -4,7 +4,8 @@ angular.module("mainApp")
             templateUrl: "directives/single-search-result/single-search-result.html",
             restrict: "E",
             scope: {
-                singlePiece: "="
+                singlePiece: "=",
+                newUrl: "="
             }
         }
     });

@@ -26,6 +26,7 @@ angular.module("mainApp")
             if ($scope.newUrl) {
                 $scope.singlePiece.imageUrls.push($scope.newUrl);
             }
+            $scope.newUrl = "";
             favService.putFav($routeParams.id, $scope.singlePiece)
                 .then(
                     function (response) {
