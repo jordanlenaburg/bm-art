@@ -96,6 +96,11 @@ input {
     z-index: 1;
 }
 
+.card-background{
+    background-position: center;
+    background-size: cover;
+}
+
 .foot {
     position: absolute;
     background-color: black;

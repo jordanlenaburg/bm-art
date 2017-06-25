@@ -54,7 +54,7 @@ angular.module("mainApp")
             return $http.delete("/favorites/" + id)
                 .then(
                     function (response) {
-                        alert("Deleted from favorites!")
+                        alert("Deleted from favorites!");
                         // console.log(response);
                         return response.data
                     },
