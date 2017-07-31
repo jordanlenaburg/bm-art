@@ -8,7 +8,10 @@ var app = express();
 app.use(bodyParser.json());
 app.use(morgan("dev"));
 
-mongoose.connect("mongodb://localhost/bm");
+mongoose.connect("mongodb://localhost/bm", function (err) {
+    if (err) throw err;
+    else console.log("Connected to db")
+});
 
 app.use("/favorites", require("./routes/favoritesRoute"));
 app.use("/art", require("./routes/bmApiRoute"));
